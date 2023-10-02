@@ -1,8 +1,8 @@
 public class Allies extends Feiticeiros {
     private String name;
 
-    public Allies(int level, int grade, int strength, int agility, int cursedEnergy, int specialization, String name) {
-        super(level, grade, strength, agility, cursedEnergy, specialization);
+    public Allies(int life, int level, int grade, int strength, int agility, int cursedEnergy, int specialization, String name) {
+        super(life, level, grade, strength, agility, cursedEnergy, specialization);
         this.name = name;
     }
 

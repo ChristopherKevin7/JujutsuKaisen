@@ -1,4 +1,6 @@
 public class Feiticeiros {
+  
+    private int Life;//Vida do personagem
     private int Level;
     private int Grade;
     private int Strength;//Força fisica
@@ -6,7 +8,8 @@ public class Feiticeiros {
     private int CursedEnergy;
     private int Specialization; //Estilo de batalha. Ex:Usuario de Maldições
    
-    public Feiticeiros(int level, int grade, int strength, int agility, int cursedEnergy, int specialization) {
+    public Feiticeiros(int life,int level, int grade, int strength, int agility, int cursedEnergy, int specialization) {
+        Life = life;
         Level = level;
         Grade = grade;
         Strength = strength;
@@ -14,7 +17,14 @@ public class Feiticeiros {
         CursedEnergy = cursedEnergy;
         Specialization = specialization;
     }
-    
+     
+    public int getLife() {
+        return Life;
+    }
+
+    public void setLife(int life) {
+        Life = life;
+    }
     public int getLevel() {
         return Level;
     }
